@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>JUMPING GAME - AVOID YOUR HOD (Ultimate)</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>JUMPING GAME</h1>
+    <p class="subtitle">AVOID YOUR HOD</p>
+  </header>
+
+  <div id="menu" class="panel">
+    <div class="menu-left">
+      <label>Difficulty:
+        <select id="difficulty">
+          <option value="easy">EASY</option>
+          <option value="normal" selected>NORMAL</option>
+          <option value="hard">HARD</option>
+          <option value="hod">HOD MODE</option>
+        </select>
+      </label>
+      <label>Theme:
+        <select id="theme">
+          <option value="school" selected>School</option>
+          <option value="street">Street</option>
+          <option value="night">Night</option>
+        </select>
+      </label>
+      <button id="startBtn">Start Game</button>
+    </div>
+    <div class="menu-right">
+      <div>High Score: <span id="highscore">0</span></div>
+      <div>Best Time: <span id="besttime">0</span>s</div>
+    </div>
+  </div>
+
+  <div id="gameArea" class="game-area hidden">
+    <canvas id="game" width="900" height="300"></canvas>
+    <div class="hud">
+      <div id="scoreWrap">Score: <span id="score">0</span></div>
+      <div id="timeWrap">Time: <span id="time">0.0</span>s</div>
+      <div id="powerWrap"></div>
+    </div>
+    <div class="controls">
+      <button id="jumpBtn" class="jump-btn"><img src="assets/btn_jump.png" alt="jump"/></button>
+    </div>
+  </div>
+
+  <div id="gameOver" class="panel hidden">
+    <h2>Game Over</h2>
+    <p id="finalScore">Score: 0</p>
+    <p id="finalTime">Time: 0.0s</p>
+    <div class="go-buttons">
+      <button id="restartBtn">Restart</button>
+      <button id="menuBtn">Main Menu</button>
+    </div>
+  </div>
+
+  <footer>
+    <div>Made By Shravanipvt – Github Project</div>
+    <div>Title – JUMPING GAME – AVOID YOUR HOD</div>
+  </footer>
+</div>
+<script src="js/game.js"></script>
+</body>
+</html>

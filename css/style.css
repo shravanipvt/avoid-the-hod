@@ -1,0 +1,18 @@
+*{box-sizing:border-box}body{font-family:Inter,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#eaf2ff,#f6f9ff);margin:0;padding:20px;display:flex;justify-content:center}
+.container{width:980px;max-width:98%}
+header{text-align:center;margin-bottom:12px}
+h1{font-size:36px;margin:6px 0}
+.subtitle{color:#334;margin-top:0}
+.panel{background:#fff;border-radius:12px;padding:12px;margin-bottom:12px;box-shadow:0 6px 20px rgba(16,40,80,0.06);display:flex;justify-content:space-between;align-items:center}
+.menu-left label{margin-right:12px}
+.menu-right{font-weight:600}
+.game-area{position:relative}
+.hidden{display:none}
+canvas{display:block;margin:12px auto;border-radius:10px;box-shadow:0 8px 30px rgba(16,40,80,0.08)}
+.hud{display:flex;justify-content:center;gap:24px;margin-top:8px;font-weight:700}
+.controls{position:relative;height:0}
+.jump-btn{position:fixed;right:20px;bottom:20px;width:72px;height:72px;border-radius:50%;border:none;box-shadow:0 8px 20px rgba(0,0,0,0.12);background:#fff;display:flex;align-items:center;justify-content:center;z-index:50}
+.jump-btn img{width:48px;height:48px}
+#gameOver{text-align:center;padding:24px}
+.go-buttons{display:flex;gap:12px;justify-content:center;margin-top:10px}
+footer{text-align:center;margin-top:8px;color:#556;font-size:13px}
